@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:background="@color/black"
+        android:layout_margin="5dp"
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:contentDescription="@string/image_from_gallery" />
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:id="@+id/linear_layout"
+        android:layout_below="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_marginEnd="5dp"
+            android:text="@string/select_image"
+            android:id="@+id/select_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_marginStart="5dp"
+            android:text="@string/predict"
+            android:id="@+id/predictBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <TextView
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:layout_below="@id/linear_layout"
+        android:id="@+id/resView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
